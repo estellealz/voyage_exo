@@ -1,0 +1,79 @@
+// _about-us.scss
+
+.about-us {
+    padding: 50px;
+    background-color: $background-color;
+
+    // Introduction (Notre Mission)
+    .about-intro {
+        max-width: 800px;
+        margin: auto;
+        text-align: center;
+
+        h2 {
+            font-size: 2.5em;
+            color: $primary-color;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: $dark-gray;
+            line-height: 1.6;
+        }
+    }
+
+    // Section des valeurs
+    .our-values {
+        margin-top: 50px;
+
+        h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            color: $primary-color;
+        }
+
+        .values-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+
+            .value-item {
+                background-color: $white;
+                padding: 20px;
+                max-width: 250px;
+                text-align: center;
+                border-radius: 10px;
+                box-shadow: $box-shadow-light;
+                transition: transform 0.3s ease;
+
+                &:hover {
+                    transform: translateY(-5px);
+                    box-shadow: $box-shadow-hover;
+                }
+
+                img {
+                    width: 100px; /* Taille fixe pour les images */
+                    height: 100px; /* Garde l'image ronde */
+                    border-radius: 50%; /* Rend l'image circulaire */
+                    object-fit: cover; /* Évite la déformation de l'image */
+                    margin-bottom: 15px;
+                    transition: transform 0.3s ease; /* Animation douce */
+                }
+
+                h3 {
+                    font-size: 1.4em;
+                    color: $primary-color;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font-size: 1em;
+                    color: $dark-gray;
+                }
+            }
+        }
+    }
+}

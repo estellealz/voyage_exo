@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .navbar {
   background-color: #1E90FF;
   padding: 15px;
@@ -31,11 +32,11 @@
 }
 
 .banner {
-  background: url("images/travel_banner.jpg") no-repeat center center/cover;
+  position: relative;
+  background: url("images/paris.jpg") no-repeat center center/cover;
   color: #ffffff;
   text-align: center;
   padding: 150px 20px;
-  position: relative;
 }
 .banner::before {
   content: "";
@@ -44,7 +45,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 .banner .banner-content {
@@ -74,6 +75,66 @@
 }
 .banner .banner-content .btn-banner:hover {
   background-color: #ff3814;
+}
+
+.explore {
+  padding: 50px;
+  text-align: center;
+  background-color: #f0f8ff;
+}
+.explore h2 {
+  font-size: 2.5em;
+  color: #1E90FF;
+  margin-bottom: 40px;
+}
+.explore .destinations {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.explore .destinations .flex-item {
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.explore .destinations .flex-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.explore .destinations .flex-item img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.explore .destinations .flex-item .destination-content {
+  padding: 20px;
+  text-align: left;
+}
+.explore .destinations .flex-item .destination-content h3 {
+  font-size: 1.5em;
+  color: #1E90FF;
+  margin-bottom: 10px;
+}
+.explore .destinations .flex-item .destination-content p {
+  font-size: 1.1em;
+  color: #333333;
+  margin-bottom: 20px;
+}
+.explore .destinations .flex-item .destination-content .btn {
+  padding: 10px 20px;
+  background-color: #1E90FF;
+  color: #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.explore .destinations .flex-item .destination-content .btn:hover {
+  background-color: #FF6347;
 }
 
 .about-us {
@@ -121,65 +182,23 @@
 }
 .about-us .our-values .values-container .value-item:hover {
   transform: translateY(-5px);
-}
-box-shadow .about-us .our-values .values-container .value-item:hover:hover {
-  transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
-.about-us .our-values .values-container .value-item:hover img {
-  width: 80px;
-  height: 80px;
+.about-us .our-values .values-container .value-item img {
+  width: 100px; /* Taille fixe pour les images */
+  height: 100px; /* Garde l'image ronde */
+  border-radius: 50%; /* Rend l'image circulaire */
+  -o-object-fit: cover;
+     object-fit: cover; /* Évite la déformation de l'image */
   margin-bottom: 15px;
+  transition: transform 0.3s ease; /* Animation douce */
 }
-.about-us .our-values .values-container .value-item:hover h3 {
+.about-us .our-values .values-container .value-item h3 {
   font-size: 1.4em;
   color: #1E90FF;
   margin-bottom: 10px;
 }
-.about-us .our-values .values-container .value-item:hover p {
-  font-size: 1em;
-  color: #333333;
-}
-.about-us .our-values .our-team {
-  margin-top: 50px;
-}
-.about-us .our-values .our-team h2 {
-  text-align: center;
-  font-size: 2.5em;
-  margin-bottom: 40px;
-  color: #1E90FF;
-}
-.about-us .our-values .our-team .team-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-.about-us .our-values .our-team .team-container .team-member {
-  background-color: #ffffff;
-  padding: 20px;
-  max-width: 250px;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-.about-us .our-values .our-team .team-container .team-member:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-.about-us .our-values .our-team .team-container .team-member img {
-  width: 100%;
-  height: auto;
-  border-radius: 50%;
-  margin-bottom: 15px;
-}
-.about-us .our-values .our-team .team-container .team-member h3 {
-  font-size: 1.4em;
-  color: #1E90FF;
-  margin-bottom: 5px;
-}
-.about-us .our-values .our-team .team-container .team-member p {
+.about-us .our-values .values-container .value-item p {
   font-size: 1em;
   color: #333333;
 }
@@ -372,4 +391,54 @@ footer p {
 }
 .testimonials .flex-container .testimonial-item strong {
   color: #1E90FF;
+}
+
+.our-team {
+  margin-top: 50px;
+}
+.our-team h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #1E90FF;
+}
+.our-team .team-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.our-team .team-container .team-member {
+  background-color: #ffffff;
+  padding: 20px;
+  max-width: 250px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.our-team .team-container .team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.our-team .team-container .team-member img {
+  width: 120px; /* Taille contrôlée des images */
+  height: 120px;
+  border-radius: 50%; /* Rend l'image circulaire */
+  -o-object-fit: cover;
+     object-fit: cover; /* Maintient la proportion de l'image */
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+.our-team .team-container .team-member img:hover {
+  transform: scale(1.05); /* Un léger zoom au survol */
+}
+.our-team .team-container .team-member h3 {
+  font-size: 1.4em;
+  color: #1E90FF;
+  margin-bottom: 5px;
+}
+.our-team .team-container .team-member p {
+  font-size: 1em;
+  color: #333333;
 }/*# sourceMappingURL=style.css.map */
