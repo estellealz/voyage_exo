@@ -1,0 +1,112 @@
+// _form.scss
+
+@import 'variables';
+
+// Section d'introduction du formulaire
+.contact-intro {
+    padding: $padding-section;
+    text-align: center;
+
+    h2 {
+        font-size: 2.5em;
+        color: $primary-color;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 1.2em;
+        max-width: 600px;
+        margin: auto;
+        line-height: 1.5;
+        color: $dark-gray;
+    }
+}
+
+// Section du formulaire de contact
+.contact-form {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+    .form-wrapper {
+        width: 100%;
+        max-width: 600px;
+        padding: 30px;
+        background-color: $white;
+        border-radius: 12px;
+        box-shadow: $box-shadow-light;
+        box-sizing: border-box;
+    }
+
+    h2 {
+        text-align: center;
+        color: $primary-color;
+        margin-bottom: 20px;
+        font-size: 2.2em;
+    }
+
+    // Style des champs du formulaire
+    .form-group {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+
+        // Style des labels
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: $dark-gray;
+        }
+
+        // Champs de texte, email, sélection et zone de texte
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        select,
+        textarea {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            margin-top: 5px;
+
+            &:focus {
+                outline: none;
+                border-color: $primary-color;
+                box-shadow: 0 0 8px rgba(211, 47, 47, 0.3);
+            }
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        // Style des boutons radio
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+    }
+
+    // Bouton d'envoi du formulaire
+    .form-group button {
+        width: 100%;
+        padding: 15px;
+        background-color: $primary-color;
+        border: none;
+        border-radius: 8px;
+        color: $white;
+        font-size: 1.1em;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+
+        &:hover {
+            background-color: $secondary-color;
+            transform: translateY(-2px);
+        }
+
+        &:active {
+            transform: translateY(1px);
+        }
+    }
+}

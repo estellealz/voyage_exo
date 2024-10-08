@@ -1,0 +1,36 @@
+.testimonials {
+    padding: 50px;
+    background-color: $white;
+
+    h2 {
+        text-align: center;
+        font-size: 2.5em;
+        margin-bottom: 40px;
+        color: $primary-color;
+    }
+
+    .flex-container {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .testimonial-item {
+            background-color: $background-color;
+            padding: 20px;
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: $box-shadow-light;
+            text-align: center;
+
+            p {
+                color: $dark-gray;
+                margin-bottom: 10px;
+            }
+
+            strong {
+                color: $primary-color;
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.navbar {
+    background-color: $primary-color;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: $box-shadow-light;
+
+    .logo {
+        font-family: $font-primary;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: $white;
+        text-transform: uppercase;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+
+        a {
+            color: $white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 12px;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: $secondary-color;
+                border-radius: 4px;
+            }
+        }
+    }
+}
