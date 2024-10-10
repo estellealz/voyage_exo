@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demande de Voyage</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="scss/footer.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -14,7 +15,6 @@
             <ul class="nav-links">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="a-propos.html">À propos</a></li>
-                <li><a href="destinations.html">Destinations</a></li>
                 <li><a href="temoignages.html">Témoignages</a></li>
                 <li><a href="formulaire.html">Contact</a></li>
                 <li><a href="shop.html">Voyages</a></li>
@@ -89,9 +89,41 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Voyage. Tous droits réservés. Merci de nous avoir contactés.</p>
-    </footer>
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <!-- Section "À propos" -->
+        <div class="footer-about">
+            <h3>À propos de Voyages</h3>
+            <p>Voyages est une agence dédiée à la création d'expériences uniques dans les destinations les plus prisées au monde. Nous vous accompagnons tout au long de votre aventure.</p>
+        </div>
+
+        <!-- Section "Liens rapides" (sans "Destinations") -->
+        <div class="footer-links">
+            <h3>Liens rapides</h3>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
+                <li><a href="temoignages.html">Témoignages</a></li>
+                <li><a href="formulaire.html">Contact</a></li>
+                <li><a href="shop.html">Voyages</a></li>
+                <li><a href="mentions-legales.html">Mentions légales</a></li> <!-- Ajout du lien vers "Mentions légales" -->
+            </ul>
+        </div>
+
+        <!-- Section "Contact" -->
+        <div class="footer-contact">
+            <h3>Contact</h3>
+            <p>Email: contact@voyages.com</p>
+            <p>Téléphone: +33 1 23 45 67 89</p>
+        </div>
+    </div>
+
+    <!-- Section Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 Voyages. Tous droits réservés. <a href="mentions-legales.html">Mentions légales</a></p>
+    </div>
+</footer>
+
 </body>
 </html>

@@ -1,4 +1,5 @@
 // _variables.scss
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
 
 // Couleurs principales
 $primary-color: #1E90FF; // Bleu voyage
@@ -6,9 +7,10 @@ $secondary-color: #FF6347; // Rouge corail pour les accents
 $background-color: #f0f8ff; // Couleur douce pour le fond
 $white: #ffffff;
 $dark-gray: #333333;
+$background-color-light : #999;
 
 // Typographies
-$font-primary: 'Arial', sans-serif;
+$font-primary: 'Libre Baskerville', serif;
 
 // Espacement
 $padding-section: 50px;
@@ -17,3 +19,10 @@ $padding-container: 15px;
 // Ombres
 $box-shadow-light: 0 4px 8px rgba(0, 0, 0, 0.1);
 $box-shadow-hover: 0 6px 12px rgba(0, 0, 0, 0.2);
+
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    font-family: $font-primary;
+}

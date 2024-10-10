@@ -1,11 +1,67 @@
 footer {
     background-color: $primary-color;
     color: $white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 30px;
+    padding: 40px 20px;
 
-    p {
-        margin: 0;
+    .footer-container {
+        display: flex;
+        justify-content: space-between; /* Colonne sur une seule ligne */
+        align-items: flex-start;
+        flex-wrap: wrap; /* Pour qu'il s'adapte aux petits écrans */
+        max-width: 1200px;
+        margin: 0 auto;
+
+        /* Style des sections */
+        div {
+            flex: 1 1 250px; /* Taille minimum de chaque section */
+            padding: 0 15px;
+            margin-bottom: 20px;
+
+            h3 {
+                margin-bottom: 15px;
+                font-size: 1.2em;
+                color: $white;
+                text-transform: uppercase;
+            }
+
+            p, li {
+                font-size: 0.9em;
+                color: $white;
+            }
+
+            /* Liste de liens */
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0; /* Réinitialisation des marges */
+
+                li {
+                    margin-bottom: 10px;
+
+                    a {
+                        color: $white; /* Liens en blanc */
+                        text-decoration: none;
+                        font-weight: bold;
+                        transition: color 0.3s ease;
+
+                        &:hover {
+                            color: $secondary-color; /* Couleur de survol */
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Section Copyright */
+    .footer-bottom {
+        text-align: center;
+        padding-top: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+        p {
+            margin: 0;
+            font-size: 0.9em;
+        }
     }
 }

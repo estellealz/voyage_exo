@@ -1,0 +1,70 @@
+/* temoignages.css */
+
+.testimonials {
+    padding: 50px;
+    background-color: #ffffff;
+    background-image: url('images/testimonials-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.testimonials .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.testimonials-slider {
+    overflow-x: auto; /* Défilement horizontal */
+    white-space: nowrap; /* Maintenir les éléments sur une seule ligne */
+    padding-bottom: 20px;
+}
+
+.testimonials-container {
+    display: inline-flex;
+    gap: 20px;
+}
+
+.testimonial-item {
+    background-color: #ffffff;
+    padding: 20px;
+    min-width: 220px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    white-space: normal; /* Permettre au texte de revenir à la ligne */
+}
+
+.testimonial-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-item img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%; /* Images rondes */
+    object-fit: cover; /* Maintient les proportions sans déformation */
+    margin-bottom: 10px;
+}
+
+.testimonial-item p {
+    font-size: 0.9em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.testimonial-item h3 {
+    font-size: 1.1em;
+    color: #1E90FF;
+    margin-bottom: 5px;
+}

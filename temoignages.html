@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Témoignages - Voyages</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="scss/temoignages.css">
+    <link rel="stylesheet" href="scss/footer.css">
+
 </head>
 <body>
     <!-- Navbar -->
@@ -14,7 +17,6 @@
             <ul class="nav-links">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="a-propos.html">À propos</a></li>
-                <li><a href="destinations.html">Destinations</a></li>
                 <li><a href="temoignages.html">Témoignages</a></li>
                 <li><a href="formulaire.html">Contact</a></li>
                 <li><a href="shop.html">Voyages</a></li>
@@ -22,53 +24,83 @@
         </nav>
     </header>
 
-    <!-- Section Témoignages avec Image de Fond -->
-    <section class="testimonials" style="background-image: url('images/testimonials-bg.jpg'); background-size: cover; background-position: center;">
+    <!-- Section Témoignages avec Carousel -->
+    <section class="testimonials">
         <div class="overlay">
             <h2>Ce que disent nos clients</h2>
-            <div class="testimonials-container">
-                <div class="testimonial-item">
-                    <p>"Voyages a organisé un voyage incroyable pour nous en Europe. Tout était parfait, du début à la fin. Je recommande fortement leurs services !"</p>
-                    <h3>Jean Dupont</h3>
-                    <img src="images/client1.jpg" alt="Jean Dupont">
-                </div>
-
-                <div class="testimonial-item">
-                    <p>"Un service exceptionnel et des destinations magnifiques. Nous avons particulièrement apprécié notre séjour en Asie. Merci Voyages !"</p>
-                    <h3>Marie Leclerc</h3>
-                    <img src="images/client2.jpg" alt="Marie Leclerc">
-                </div>
-
-                <div class="testimonial-item">
-                    <p>"Le voyage en Amérique du Sud a été une expérience inoubliable grâce à Voyages. Chaque détail a été parfaitement organisé."</p>
-                    <h3>Lucas Martin</h3>
-                    <img src="images/client3.jpg" alt="Lucas Martin">
-                </div>
-
-                <div class="testimonial-item">
-                    <p>"Nous avons passé des vacances de rêve grâce à Voyages. Une organisation impeccable, des activités sur mesure, et des souvenirs incroyables."</p>
-                    <h3>Sophie Martin</h3>
-                    <img src="images/client4.jpg" alt="Sophie Martin">
-                </div>
-
-                <div class="testimonial-item">
-                    <p>"Je recommande fortement Voyages pour leur professionnalisme et leur souci du détail. Le voyage était bien plus que ce que nous espérions."</p>
-                    <h3>Antoine Durand</h3>
-                    <img src="images/client5.jpg" alt="Antoine Durand">
-                </div>
-
-                <div class="testimonial-item">
-                    <p>"Une expérience incroyable ! De la réservation aux excursions, tout a été parfaitement organisé. Merci pour ces merveilleux moments."</p>
-                    <h3>Claire Dubois</h3>
-                    <img src="images/client6.jpg" alt="Claire Dubois">
+            <div class="testimonials-slider">
+                <div class="testimonials-container">
+                    <div class="testimonial-item">
+                        <p>"Voyages a organisé un voyage incroyable pour nous en Europe. Tout était parfait, du début à la fin."</p>
+                        <h3>Jean Dupont</h3>
+                        <img src="images/temoignages/1.jpg" alt="Jean Dupont">
+                    </div>
+                    <div class="testimonial-item">
+                        <p>"Un service exceptionnel et des destinations magnifiques. Nous avons particulièrement apprécié notre séjour en Asie."</p>
+                        <h3>Marie Leclerc</h3>
+                        <img src="images/temoignages/2.jpg" alt="Marie Leclerc">
+                    </div>
+                    <div class="testimonial-item">
+                        <p>"Le voyage en Amérique du Sud a été une expérience inoubliable grâce à Voyages. Chaque détail a été parfaitement organisé."</p>
+                        <h3>Lucas Martin</h3>
+                        <img src="images/temoignages/3.jpg" alt="Lucas Martin">
+                    </div>
+                    <div class="testimonial-item">
+                        <p>"Nous avons passé des vacances de rêve grâce à Voyages. Une organisation impeccable, des activités sur mesure, et des souvenirs incroyables."</p>
+                        <h3>Sophie Martin</h3>
+                        <img src="images/temoignages/4.jpg" alt="Sophie Martin">
+                    </div>
+                    <div class="testimonial-item">
+                        <p>"Je recommande fortement Voyages pour leur professionnalisme et leur souci du détail. Le voyage était bien plus que ce que nous espérions."</p>
+                        <h3>Antoine Durand</h3>
+                        <img src="images/temoignages/5.jpg" alt="Antoine Durand">
+                    </div>
+                    <div class="testimonial-item">
+                        <p>"Une expérience incroyable ! De la réservation aux excursions, tout a été parfaitement organisé. Merci pour ces merveilleux moments."</p>
+                        <h3>Claire Dubois</h3>
+                        <img src="images/temoignages/6.jpg" alt="Claire Dubois">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Voyages. Tous droits réservés.</p>
-    </footer>
+<!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <!-- Section "À propos" -->
+        <div class="footer-about">
+            <h3>À propos de Voyages</h3>
+            <p>Voyages est une agence dédiée à la création d'expériences uniques dans les destinations les plus prisées au monde. Nous vous accompagnons tout au long de votre aventure.</p>
+        </div>
+
+        <!-- Section "Liens rapides" (sans "Destinations") -->
+        <div class="footer-links">
+            <h3>Liens rapides</h3>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
+                <li><a href="temoignages.html">Témoignages</a></li>
+                <li><a href="formulaire.html">Contact</a></li>
+                <li><a href="shop.html">Voyages</a></li>
+                <li><a href="mentions-legales.html">Mentions légales</a></li> <!-- Ajout du lien vers "Mentions légales" -->
+            </ul>
+        </div>
+
+        <!-- Section "Contact" -->
+        <div class="footer-contact">
+            <h3>Contact</h3>
+            <p>Email: contact@voyages.com</p>
+            <p>Téléphone: +33 1 23 45 67 89</p>
+        </div>
+    </div>
+
+    <!-- Section Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 Voyages. Tous droits réservés. <a href="mentions-legales.html">Mentions légales</a></p>
+    </div>
+</footer>
+
 </body>
 </html>
