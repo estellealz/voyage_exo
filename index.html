@@ -6,6 +6,7 @@
     <title>Voyages Inoubliables</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="scss/footer.css">
+    <link rel="stylesheet" href="scss/cookies.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -107,7 +108,56 @@
     </div>
 </footer>
 
+<!-- Bandeau de cookies -->
+<div id="cookie-banner" class="cookie-banner">
+    <p>Ce site utilise des cookies pour améliorer votre expérience. <br> Voulez-vous accepter les cookies ?</p>
+    <button id="accept-cookies" class="cookie-btn accept">Accepter</button>
+    <button id="reject-cookies" class="cookie-btn reject">Refuser</button>
+</div>
 
+<script>
+    // Fonction pour gérer les cookies
+    function setCookie(name, value, days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "") + expires + "; path=/";
+    }
+    
+    function getCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+    }
+    
+    // Vérification si l'utilisateur a déjà accepté ou refusé les cookies
+    window.onload = function () {
+        if (!getCookie('cookiesAccepted')) {
+            document.getElementById('cookie-banner').style.display = 'block';
+        }
+    };
+    
+    // Bouton "Accepter" les cookies
+    document.getElementById('accept-cookies').addEventListener('click', function () {
+        setCookie('cookiesAccepted', 'yes', 365);  // Le cookie dure 1 an
+        document.getElementById('cookie-banner').style.display = 'none';
+    });
+    
+    // Bouton "Refuser" les cookies
+    document.getElementById('reject-cookies').addEventListener('click', function () {
+        setCookie('cookiesAccepted', 'no', 365);  // Le cookie dure 1 an
+        document.getElementById('cookie-banner').style.display = 'none';
+    });
+    </script>
+    
 
 </body>
 </html>
