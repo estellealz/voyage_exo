@@ -62,3 +62,49 @@ footer {
     margin: 0;
     font-size: 0.9em;
 }
+
+/* Section Mentions légales */
+.legal {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+}
+
+.legal h1 {
+    font-size: 2.8em;
+    margin-bottom: 25px;
+    color: #1E90FF; /* Couleur principale */
+    text-align: center;
+    font-weight: 700;
+}
+
+.legal h2 {
+    font-size: 1.8em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #FF6347; /* Couleur d'accent */
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.legal p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #555; /* Gris clair pour les paragraphes */
+    text-align: justify;
+    line-height: 1.8;
+}
+
+/* Liens */
+a {
+    color: #1E90FF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
